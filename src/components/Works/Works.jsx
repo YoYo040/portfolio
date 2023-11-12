@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import "./Works.css";
 import Upwork from "../../img/Upwork.png";
 import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
+import redbubble from "../../img/redbubble.png";
+import khmsa from "../../img/khmsa.webp";
 import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
@@ -60,10 +60,10 @@ const Works = () => {
             <img src={Fiverr} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={redbubble} alt="" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={khmsa} alt="" />
           </div>
           <div className="w-secCircle">
             <img src={Facebook} alt="" />
