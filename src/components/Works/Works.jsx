@@ -2,8 +2,9 @@ import React, { useContext } from "react";
 import "./Works.css";
 import Upwork from "../../img/Upwork.png";
 import Fiverr from "../../img/fiverr.png";
+import khamsat from "../../img/khamsat.webp";
 import redbubble from "../../img/redbubble.png";
-import khmsa from "../../img/khmsa.webp";
+
 import Facebook from "../../img/Facebook.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
@@ -25,14 +26,12 @@ const Works = () => {
           </span>
           <span>Brands & Clients</span>
           <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
+          I am a web developer working on these applications. I have good experience. 
             <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
+            For more information,
             <br />
-            y dummy text of printingLorem
-            <br />
-            ispum is simpley dummy text of printing
+            Contact me
+           
           </spane>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
@@ -60,11 +59,12 @@ const Works = () => {
             <img src={Fiverr} alt="" />
           </div>
           <div className="w-secCircle">
+            <img src={khamsat} alt="" />
+          </div>
+          <div className="w-secCircle">
             <img src={redbubble} alt="" />
           </div>{" "}
-          <div className="w-secCircle">
-            <img src={khmsa} alt="" />
-          </div>
+         
           <div className="w-secCircle">
             <img src={Facebook} alt="" />
           </div>
