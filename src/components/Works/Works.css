@@ -90,6 +90,7 @@
 }
 
 .w-secCircle > img {
+  width: 150%;
   transform: scale(0.6);
 }
 

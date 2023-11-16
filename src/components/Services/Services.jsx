@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import "./Services.css";
 import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
+import frontend from "../../img/f.png";
+import backend from "../../img/b.png";
+import uml from "../../img/uml.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import Resume from './resume.pdf';
@@ -26,10 +26,14 @@ const Services = () => {
         {/* dark mode */}
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
-        <spane>
-         I'build web application 
+        <spane >
+          Front-end development 
           <br />
-          ispum is simpley dummy text of printing
+          <br />
+          Front-end development 
+          <br />
+          <br />
+          Project analysis
         </spane>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
@@ -45,9 +49,9 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={HeartEmoji}
+            emoji={frontend}
             heading={"Frontend"}
-            detail={"Css3, Bootstrap, Figma, Photoshop, Canva"}
+            detail={"Html,Css3, Bootstrap, Figma, Photoshop, Canva"}
           />
         </motion.div>
         {/* second card */}
@@ -57,7 +61,7 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Glasses}
+            emoji={backend}
             heading={"Backend"}
             detail={"Laravel, Php, Java, Jee, Spring boot, Python; My Sql"}
           />
@@ -69,7 +73,7 @@ const Services = () => {
           transition={transition}
         >
           <Card
-            emoji={Humble}
+            emoji={uml}
             heading={"Gestion Project"}
             detail={"Url, Methode agile"}
             color="rgba(252, 166, 31, 0.45)"

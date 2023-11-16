@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
-import boy from "../../img/yoyo.png";
+import boy from "../../img/yoyo2.png";
 import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
 import Github from "../../img/github.png";
@@ -28,8 +28,7 @@ const Intro = () => {
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
           <span>Youssef Motahhir </span>
           <span>
-            Frontend and backend Developer with high level of experience in web 
-            and development, producting the Quality work
+          I am a web developer specialized in front-end and back-end. I have strong experience in this field. For more information, please go to the services portal that I provide.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
@@ -37,9 +36,10 @@ const Intro = () => {
         </Link>
         {/* social icons */}
         <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
+          <a href="https://github.com/YoYo040"><img src={Github} alt="" /></a>
+          <a href="https://www.linkedin.com/in/youssef-moutahhir-788483278/"><img src={LinkedIn} alt="" /></a>
+          <a href="https://instagram.com/youssef_moutahir?igshid=NzZlODBkYWE4Ng=="><img src={Instagram} alt="" /></a>
+          
         </div>
       </div>
       {/* right image side */}
