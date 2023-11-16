@@ -75,7 +75,7 @@ const Services = () => {
           <Card
             emoji={uml}
             heading={"Gestion Project"}
-            detail={"Url, Methode agile"}
+            detail={"UML, Methode agile"}
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>
