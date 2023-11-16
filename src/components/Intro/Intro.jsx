@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
 import Vector2 from "../../img/Vector2.png";
@@ -11,6 +11,8 @@ import Instagram from "../../img/instagram.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Intro = () => {
   // Transition
   const transition = { duration: 2, type: "spring" };
@@ -18,6 +20,9 @@ const Intro = () => {
   // context
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
+  useEffect(() => {
+    AOS.init();
+  }, [])
 
   return (
     <div className="Intro" id="Intro">
@@ -26,7 +31,7 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Youssef Motahhir </span>
+          <span  data-aos="fade-up" date-aos-delay='300' data-aos-duration='1000'>Youssef Motahhir </span>
           <span>
           I am a web developer specialized in front-end and back-end. I have strong experience in this field. For more information, please go to the services portal that I provide.
           </span>
