@@ -6,6 +6,7 @@ import Sidebar from "../../img/sidebar.png";
 import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
 import MusicApp from "../../img/musicapp.png";
+import Skillchairs from "../../img/skillchairs.png";
 import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -24,6 +25,9 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
+          <img src={Skillchairs} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
           <img src={Sidebar} alt="" />
         </SwiperSlide>
         <SwiperSlide>
@@ -35,6 +39,8 @@ const Portfolio = () => {
         <SwiperSlide>
           <img src={HOC} alt="" />
         </SwiperSlide>
+        
+        
       </Swiper>
     </div>
   );
